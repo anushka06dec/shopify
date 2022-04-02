@@ -1,0 +1,14 @@
+{
+	"sections" :{
+		"main" :{
+			"type" :"about-page",
+			"setting" :{
+				"padding-top":20,
+				"padding-bottom":40
+			}
+		}
+	},
+	"order":{
+		"main"
+	}
+}
