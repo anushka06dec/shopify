@@ -1,5 +1,5 @@
 <ul>
-{% for product in collections['test'].products limit: 8 %}
+{% for product in products %}
  <li>
   <img src="{{ product.featured_image | product_img_url: 'medium' }}" alt="{{ product.title | escape  }}" />    
   <a class="shop-now" href="{{ product.url }}">{{ product.title | escape  }} 
