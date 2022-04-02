@@ -1,0 +1,9 @@
+<ul>
+{% for product in collections['test'].products limit: 8 %}
+ <li>
+  <img src="{{ product.featured_image | product_img_url: 'medium' }}" alt="{{ product.title | escape  }}" />    
+  <a class="shop-now" href="{{ product.url }}">{{ product.title | escape  }} 
+  </a>                              
+ </li>
+{% endfor %}
+</ul>
