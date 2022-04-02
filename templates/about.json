@@ -1,14 +1,14 @@
 {
-	"sections" :{
-		"main" :{
-			"type" :"about-page",
-			"setting" :{
-				"padding-top":20,
-				"padding-bottom":40
-			}
-		}
-	},
-	"order":{
-		"main"
-	}
+  "sections": {
+    "main": {
+      "type": "about-page",
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
 }
