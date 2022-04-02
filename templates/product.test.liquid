@@ -1,10 +1,8 @@
 <h1>new product list</h1>
-<ul>
-{% for product in products %}
- <li>
-  <img src="{{ product.featured_image | product_img_url: 'medium' }}" alt="{{ product.title | escape  }}" />    
-  <a class="shop-now" href="{{ product.url }}">{{ product.title | escape  }} 
-  </a>                              
- </li>
+<!-- if collections.frontpage.products contains 4 products -->
+{% for product in collections.frontpage.products %}
+  {% if forloop.first %}
+  <p>This collection has {{ forloop.length }} products:</p>
+  {% endif %}
+  <p>{{ product.title }}</p>
 {% endfor %}
-</ul>
