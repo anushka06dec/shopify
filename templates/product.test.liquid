@@ -5,4 +5,5 @@
   <p>This collection has {{ forloop.length }} products:</p>
   {% endif %}
   <p>{{ product.title }}</p>
+<img src="{{ product.featured_image.src | image_url: width: 240 }}" alt="{{ product.featured_image.alt }}" />
 {% endfor %}
