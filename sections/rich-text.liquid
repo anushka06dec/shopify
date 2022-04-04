@@ -12,6 +12,8 @@
 {{ article.url }}
 {{ article.comment_post_url }}
 {{ canonical_url }}
+-----------
+{{  request.path }}
 {%- style -%}
   .section-{{ section.id }}-padding {
     padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
