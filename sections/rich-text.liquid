@@ -4,7 +4,14 @@
 <noscript>{{ 'component-rte.css' | asset_url | stylesheet_tag }}</noscript>
 <noscript>{{ 'section-rich-text.css' | asset_url | stylesheet_tag }}</noscript>
 -----------------------------------
-{{ asset_url }}
+{{ shop.url }}
+{{ shop.domain }}
+{{ collection.url }}
+{{ product.url }}
+{{ blog.url }}
+{{ article.url }}
+{{ article.comment_post_url }}
+{{ canonical_url }}
 {%- style -%}
   .section-{{ section.id }}-padding {
     padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
