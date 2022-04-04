@@ -35,3 +35,11 @@
     {%- endfor -%}
   </ul>
 </nav>
+<form action="{{ routes.search_url }}">
+  <input type="text"
+    placeholder="Search"
+    name="q"
+    value="{{ search.terms | escape }}"
+ >
+  <input type="submit" value="Search">
+</form>
